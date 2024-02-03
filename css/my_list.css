@@ -1,16 +1,63 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 :root {
-  --color1: #0c4a61;
-  --color2: #f06c34;
-  --color3: #abdff0;
-  --color4: #e2deda;
-  --color5: #fccaca;
+  --header: #0c4a61;
+  --logo: #4a90e2;
+  --bg: #f0f4f8;
+  --txt: #333333;
+  --check: #34a853;
+  --todo2: #e0f7fa;
+  --todo1: #fff3e0;
 }
-body {
+header {
+  box-sizing: border-box;
+  padding: 0px 20px;
+  background-color: var(--header);
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 4px 1px;
+  margin-bottom: 20px;
+}
+header a {
+  padding: 10px;
+  border-bottom: 2px solid var(--logo);
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+.logo {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--logo);
+  font-size: 35px;
+  margin-right: 10%;
+}
+.logo h2 {
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+}
+main {
+  width: 100%;
   padding: 10px;
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--color4);
   flex-wrap: wrap;
+}
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg);
 }
 .todo {
   padding-left: 0;
@@ -22,14 +69,17 @@ body {
   list-style: none;
   box-shadow: 2px 2px 4px 1px;
   padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 .work {
-  background-color: var(--color5);
+  background-color: var(--todo1);
 }
 .personal {
-  background-color: var(--color3);
+  background-color: var(--todo2);
 }
 .list-header {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,10 +91,18 @@ body {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   font-size: 28px;
-  color: var(--color1);
+  color: var(--txt);
 }
 .list-header span {
   margin-left: 10px;
+}
+.list-header button {
+  color: var(--logo);
+  font-size: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  right: 20px;
 }
 .list-element {
   display: flex;
@@ -53,14 +111,16 @@ body {
   width: 100%;
   padding: 10px 10px;
   box-shadow: 2px 2px 3px -3px;
+  margin-bottom: 5px;
 }
 .list-element span {
-  color: var(--color1);
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--txt);
   font-size: 18px;
 }
 .list-element button {
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  color: var(--color2);
+  color: var(--check);
   font-size: 20px;
 }

@@ -46,7 +46,7 @@ header {
   align-items: center;
   margin: 0px 30px;
   font-size: 26px;
-  background-color: #354649;
+  background-color: #4a90e2;
   color: white;
   width: 55px;
   height: 55px;
@@ -54,7 +54,7 @@ header {
   transition: all 0.2s;
 }
 .icon-container:hover {
-  box-shadow: 0px 0px 1px 1px;
+  box-shadow: 0px 0px 2px 2px;
   transform: translateY(10px);
 }
 .hidden {
