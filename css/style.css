@@ -76,20 +76,24 @@ img {
 }
 #quote {
   position: fixed;
-  bottom: 30px;
-  font-size: 20px;
+  bottom: 10px;
+  font-size: 17px;
   background-color: rgba(225, 225, 225, 0.5);
   padding: 12px;
   border-radius: 20px;
 }
 #quote span:last-child {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 15px;
+  font-size: 13px;
 }
 #weather {
+  color: white;
   display: flex;
   flex-direction: column;
   font-size: 15px;
+  position: fixed;
+  top: 100px;
+  left: 20px;
 }
 .login-form {
   display: flex;

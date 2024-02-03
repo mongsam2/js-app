@@ -1,9 +1,66 @@
 :root {
-  --color1: #354649;
-  --color2: #6c7a89;
-  --color3: #a3c6c4;
-  --color4: #e0e7e9;
+  --color1: #0c4a61;
+  --color2: #f06c34;
+  --color3: #abdff0;
+  --color4: #e2deda;
+  --color5: #fccaca;
 }
 body {
-  background-color: var(--color1);
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--color4);
+  flex-wrap: wrap;
+}
+.todo {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  border-radius: 20px;
+  list-style: none;
+  box-shadow: 2px 2px 4px 1px;
+  padding-bottom: 20px;
+}
+.work {
+  background-color: var(--color5);
+}
+.personal {
+  background-color: var(--color3);
+}
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  font-size: 28px;
+  color: var(--color1);
+}
+.list-header span {
+  margin-left: 10px;
+}
+.list-element {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 10px;
+  box-shadow: 2px 2px 3px -3px;
+}
+.list-element span {
+  color: var(--color1);
+  font-size: 18px;
+}
+.list-element button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--color2);
+  font-size: 20px;
 }
