@@ -15,30 +15,30 @@
       <a href="index.html">Home</a>
     </header>
     <main>
-      <ul class="todo work">
+      <ul class="work todo">
         <div class="list-header">
-          <i class="fa-solid fa-laptop-code"></i><span>Work</span
-          ><button><i class="fa-regular fa-square-plus"></i></button>
+          <i class="fa-solid fa-laptop-code"></i><span>Work</span>
         </div>
-        <li class="list-element">
-          <span>test1</span
-          ><button>
-            <i class="fa-solid fa-circle-check"></i>
+        <div class="button-container">
+          <button class="work add-button">
+            <i class="fa-regular fa-square-plus"></i>
           </button>
-        </li>
-        <li class="list-element">
-          <span>한글 텍스트 테스트</span
-          ><button><i class="fa-solid fa-circle-check"></i></button>
-        </li>
-        <li class="list-element">
-          <span>test1</span
-          ><button><i class="fa-solid fa-circle-check"></i></button>
-        </li>
+          <form class="list-form hidden">
+            <input class="work" type="text" />
+          </form>
+        </div>
       </ul>
-      <ul class="todo personal">
+      <ul class="personal todo">
         <div class="list-header">
-          <i class="fa-solid fa-circle-user"></i><span>Personal</span
-          ><button><i class="fa-regular fa-square-plus"></i></button>
+          <i class="fa-solid fa-circle-user"></i><span>Personal</span>
+        </div>
+        <div class="button-container">
+          <button class="personal add-button">
+            <i class="fa-regular fa-square-plus"></i>
+          </button>
+          <form class="list-form hidden">
+            <input class="personal" type="text" />
+          </form>
         </div>
       </ul>
     </main>
@@ -47,5 +47,6 @@
       src="https://kit.fontawesome.com/23b670e447.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/my_list.js"></script>
   </body>
 </html>
