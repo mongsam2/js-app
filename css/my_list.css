@@ -19,6 +19,9 @@
   visibility: hidden;
 }
 header {
+  z-index: 2;
+  position: fixed;
+  top: 0px;
   box-sizing: border-box;
   padding: 0px 20px;
   background-color: var(--header);
@@ -30,11 +33,16 @@ header {
   margin-bottom: 20px;
 }
 header a {
+  margin-right: 20px;
   padding: 10px;
   border-bottom: 2px solid var(--logo);
   text-decoration: none;
   color: white;
   font-size: 16px;
+  transition: all 0.15s;
+}
+header a:hover {
+  color: var(--logo);
 }
 .logo {
   width: 160px;
@@ -49,20 +57,17 @@ header a {
   font-family: "Caveat", cursive;
   font-size: 40px;
 }
-main {
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
 body {
   margin: 0px;
+  margin-top: 130px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   background-color: var(--bg);
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .todo {
   padding-left: 0;
@@ -75,13 +80,13 @@ body {
   box-shadow: 2px 2px 4px 1px;
   padding-bottom: 45px;
   margin: 0px 10px;
-  margin-bottom: 30px;
   position: relative;
+  margin-bottom: 50px;
 }
-.todo:first-child {
+.color1 {
   background-color: var(--todo1);
 }
-.todo:last-child {
+.color2 {
   background-color: var(--todo2);
 }
 .list-header {
@@ -102,6 +107,7 @@ body {
 }
 .list-header span {
   margin-left: 10px;
+  font-weight: 600;
 }
 .button-container {
   position: absolute;
@@ -139,12 +145,11 @@ body {
 .list-element button {
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  color: grey;
   font-size: 25px;
   transition: all 0.2s;
 }
 .list-element button:hover {
-  color: var(--check);
+  color: var(--header);
 }
 .list-form {
   width: 100%;
@@ -160,4 +165,10 @@ body {
   border: none;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
+}
+.check {
+  color: var(--check);
+}
+.non-check {
+  color: grey;
 }
