@@ -148,9 +148,6 @@ body {
   font-size: 25px;
   transition: all 0.2s;
 }
-.list-element button:hover {
-  color: var(--header);
-}
 .list-form {
   width: 100%;
   margin: 0px 10px;
