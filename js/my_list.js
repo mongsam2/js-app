@@ -78,11 +78,13 @@ function checkButton(event) {
   const button = event.target.parentElement;
   const li = event.target.parentElement.parentElement;
   if (button.className === "non-check") {
+    console.log("check");
     removeDB.push(li.id);
   } else {
-    removeDB.filter((element) => {
-      element !== li.id;
+    removeDB = removeDB.filter((element) => {
+      element != li.id;
     });
+    console.log(removeDB);
   }
   button.classList.toggle("check");
   button.classList.toggle("non-check");
